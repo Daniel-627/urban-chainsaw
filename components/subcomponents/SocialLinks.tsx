@@ -4,7 +4,7 @@ type Props = {}
 
 const SocialLinks = (props: Props) => {
   return (
-    <div>SocialLinks</div>
+    <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque molestiae libero aperiam! Aliquam voluptatibus sunt iure officiis alias repellat, eligendi totam nemo omnis hic! Doloribus natus ex voluptates accusamus vitae?</p></div>
   )
 }
 
