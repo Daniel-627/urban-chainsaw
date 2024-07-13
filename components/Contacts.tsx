@@ -7,10 +7,10 @@ type Props = {}
 const Contacts = (props: Props) => {
   return (
     <div className='flex flex-row space-x-5'>
-      <div className='flex flex-1'>
+      <div className='flex flex-1 justify-center'>
         <SocialLinks />
       </div>
-      <div className='flex flex-1'>
+      <div className='flex flex-1 justify-center'>
         <ContactForm />
       </div>
     </div>
