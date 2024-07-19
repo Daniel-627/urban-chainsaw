@@ -1,38 +1,35 @@
-// app/Projects.tsx
 import React from 'react';
 import { projects } from '@/data';
 
 const Projects = () => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       {projects.map((project) => (
         <div
           key={project.id}
-          className="relative border rounded-lg overflow-hidden shadow-lg h-96"
+          className="relative rounded-3xl overflow-hidden h-[550px] px-6"
         >
-          <img src={project.img} alt={project.title} className="absolute inset-0 w-full h-full object-cover z-0" />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 z-10">
-            <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-            <p className="text-gray-300 mb-4">{project.des}</p>
-            <div className="flex space-x-2 mb-4">
-              {project.categories.map((category, index) => (
-                <span
-                  key={index}
-                  className="bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded"
-                >
-                  {category}
-                </span>
-              ))}
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <div>
+
+              <img src={project.img} alt={project.title} className="absolute inset-0 w-full h-full object-cover z-0" />
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4 z-10">
+                <div className="flex flex-row space-x-2 mb-4">
+                  {project.categories.map((category, index) => (
+                    <span
+                      key={index}
+                      className="text-white text-xs font-semibold space-x-2 py-1 border-2 rounded-3xl px-2 "
+                    >
+                      {category}
+                    </span>
+                  ))}
+                </div>
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
+                </a>    
+              </div>
             </div>
-            <a
-              href={project.link}
-              className="text-blue-400 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Visit Project
-            </a>
-          </div>
+          </a>
         </div>
       ))}
     </div>
