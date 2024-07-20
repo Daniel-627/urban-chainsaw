@@ -18,15 +18,14 @@ const Projects = () => {
                   {project.categories.map((category, index) => (
                     <span
                       key={index}
-                      className="text-white text-xs font-semibold space-x-2 py-1 border-2 rounded-3xl px-2 "
+                      className="text-slate-200 text-xs font-semibold space-x-2 border border-slate-400 rounded-3xl p-2 "
                     >
                       {category}
                     </span>
                   ))}
                 </div>
-                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-                </a>    
+                  <h3 className="text-xl font-semibold text-slate-50 mb-2">{project.title}</h3>
+                  <p className="text-xl font-extralight text-slate-200 mb-2">{project.des}</p> 
               </div>
             </div>
           </a>

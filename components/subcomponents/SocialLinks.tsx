@@ -1,6 +1,7 @@
 // app/SocialMediaGrid.tsx
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaYoutube, FaPinterest, FaSnapchat, FaTiktok } from 'react-icons/fa';
+import { socialMediaLinks } from '@/data';
+{/*import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaYoutube, FaPinterest, FaSnapchat, FaTiktok } from 'react-icons/fa';
 
 const socialMediaLinks = [
   { icon: FaFacebook, link: 'https://www.facebook.com' },
@@ -12,11 +13,11 @@ const socialMediaLinks = [
   { icon: FaPinterest, link: 'https://www.pinterest.com' },
   { icon: FaSnapchat, link: 'https://www.snapchat.com' },
   { icon: FaTiktok, link: 'https://www.tiktok.com' },
-];
+];*/}
 
 const SocialLinks = () => {
   return (
-    <div className="grid grid-cols-4 gap-4 p-8">
+    <div className="grid grid-cols-4 gap-2 p-2 ">
       {socialMediaLinks.map((social, index) => {
         const Icon = social.icon;
         return (
@@ -27,7 +28,7 @@ const SocialLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon size={40} className="text-3xl text-white" />
+            <Icon color='slate' className='text-3xl text-slate-400 hover:text-slate-50 hover:text-4xl' />
           </a>
         );
       })}

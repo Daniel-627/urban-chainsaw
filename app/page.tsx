@@ -1,6 +1,6 @@
 import About from "@/components/About";
-import Contacts from "@/components/Contacts";
 import Hero from "@/components/Hero";
+import Process from "@/components/Process";
 import ServicesCarousel from "@/components/subcomponents/ServicesCarousel";
 import Works from "@/components/Works";
 
@@ -11,7 +11,7 @@ export default function Home() {
       <ServicesCarousel />
       <Works />
       <About />
-      <Contacts />
+      <Process />
     </main>
   );
 }
