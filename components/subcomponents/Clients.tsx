@@ -1,10 +1,13 @@
 import React from 'react'
+import Marquee from './Marquee'
 
 type Props = {}
 
 const Clients = (props: Props) => {
   return (
-    <div>Clients</div>
+    <div className='py-10'>
+      <Marquee />
+    </div>
   )
 }
 
