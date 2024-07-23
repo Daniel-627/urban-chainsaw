@@ -7,7 +7,7 @@ import React from 'react';
      // Add more logos as needed
    ];
 
-   const Marquee: React.FC = () => {
+   const ClientsMarquee: React.FC = () => {
      return (
        <div className="relative overflow-hidden whitespace-nowrap py-4">
          <div className="animate-marquee flex">
@@ -32,4 +32,4 @@ import React from 'react';
      );
    };
 
-   export default Marquee;
+   export default ClientsMarquee;

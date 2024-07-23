@@ -15,7 +15,7 @@ const Hero = (props: Props) => {
           height={150}
           quality={100}
           placeholder='blur'
-          className='rounded-full'
+          className='rounded-3xl'
         /> 
       </div>
       <div className='flex flex-col justify-items-center mx-56 text-center space-y-5 py-5'>

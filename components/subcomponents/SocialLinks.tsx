@@ -28,7 +28,7 @@ const SocialLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon color='slate' className='text-3xl text-slate-400 hover:text-slate-50 hover:text-4xl' />
+            <Icon color='slate' className='text-3xl text-slate-400 hover:text-slate-50' />
           </a>
         );
       })}

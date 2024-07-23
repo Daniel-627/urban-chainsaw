@@ -7,8 +7,8 @@ type Props = {}
 const Process = (props: Props) => {
   return (
     <div className='flex flex-row'>
-      <div className='flex flex-1 flex-col'>
-        <h3 className='text-4xl font-semibold text-slate-200'>My way of getting things done. </h3>
+      <div className='flex flex-1 flex-col space-y-4'>
+        <h3 className='text-4xl font-semibold text-slate-200'>This is how I get things done. </h3>
         <p className='text-base text-slate-400'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
            Quaerat aperiam nam cumque explicabo ipsum atque amet earum, provident veniam possimus nisi labore 
            expedita iste accusantium quibusdam, magni obcaecati facere culpa?</p>

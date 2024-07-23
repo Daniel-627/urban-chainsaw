@@ -1,12 +1,13 @@
 import React from 'react'
-import Marquee from './Marquee'
+import ClientsMarquee from './ClientsMarquee'
+
 
 type Props = {}
 
 const Clients = (props: Props) => {
   return (
     <div className='py-10'>
-      <Marquee />
+      <ClientsMarquee />
     </div>
   )
 }

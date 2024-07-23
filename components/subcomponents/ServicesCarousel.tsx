@@ -1,12 +1,13 @@
 import React from 'react'
-import Marquee from './Marquee'
+import ServicesMarquee from './ServicesMarquee'
+
 
 type Props = {}
 
 const ServicesCarousel = (props: Props) => {
   return (
     <div className='my-10'>
-      <Marquee />
+      <ServicesMarquee />
     </div>
   )
 }

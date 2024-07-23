@@ -59,3 +59,14 @@ export const skills = [
   { name: 'Wordpress', logo: '/logos/wordpress.png' },
   { name: 'CSS', logo: '/logos/css.png' },
 ]
+
+export const process = [
+  {
+    index: 1,
+    title: "Ux/Wireframing",
+    details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Quaerat aperiam nam cumque explicabo ipsum atque amet earum, provident veniam possimus nisi labore "
+  },
+  {index: 2, title: "Web Design", details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Quaerat aperiam nam cumque explicabo ipsum atque amet earum, provident veniam possimus nisi labore "},
+  {index: 3, title: "Web Development", details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aperiam nam cumque explicabo ipsum atque amet earum, provident veniam possimus nisi labore "},
+  {index: 4, title: "Analytics Setup/Support", details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aperiam nam cumque explicabo ipsum atque amet earum, provident veniam possimus nisi labore "}
+]

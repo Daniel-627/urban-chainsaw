@@ -10,9 +10,9 @@ const Header = (props: Props) => {
         <p className='font-extralight text-gray-400 text-xl'>Daniel627</p>
       </div>
       <div className='flex flex-row space-x-3'>
-        <AiOutlineX className='text-3xl text-slate-400' />
-        <AiFillLinkedin className='text-3xl text-slate-400' />
-        <AiOutlineMail className='text-3xl text-slate-400' />
+        <AiOutlineX className='text-3xl text-slate-400 hover:text-slate-100' />
+        <AiFillLinkedin className='text-3xl text-slate-400 hover:text-slate-100' />
+        <AiOutlineMail className='text-3xl text-slate-400 hover:text-slate-100' />
       </div>
     </div>
   )

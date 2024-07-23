@@ -14,7 +14,8 @@ const About = (props: Props) => {
             Atque molestiae libero aperiam! Aliquam voluptatibus sunt iure officiis alias repellat,
              eligendi totam nemo omnis hic! Doloribus natus ex voluptates accusamus vitae?</p>
         </div>
-        <div className='flex flex-1 justify-center items-center'>
+        <div className='flex flex-1 flex-col justify-center items-center space-y-4'>
+          <h3 className='text-3xl text-slate-200'>My Skills</h3>
           <Skills />
         </div>
       </div>
