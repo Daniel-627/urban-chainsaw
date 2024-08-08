@@ -3,7 +3,11 @@ import { projects } from '@/data';
 
 const Projects = () => {
   return (
-    <div className="space-y-8 pb-3">
+    <div className="flex flex-col space-y-8 py-3">
+      <div className='flex flex-col justify-center items-center'>
+        <h1 className='text-3xl text-[#ffffff]'>Selected Work</h1>
+        <p className='text-xs text-[#b0b0b0]'>This is what I'm capable of...</p>
+      </div>
       {projects.map((project) => (
         <div
           key={project.id}
@@ -18,14 +22,14 @@ const Projects = () => {
                   {project.categories.map((category, index) => (
                     <span
                       key={index}
-                      className="text-slate-200 text-xs font-semibold space-x-2 border border-slate-400 rounded-3xl p-2 "
+                      className="text-[#b0b0b0] text-xs font-semibold space-x-2 border border-slate-400 rounded-3xl p-2 "
                     >
                       {category}
                     </span>
                   ))}
                 </div>
-                  <h3 className="text-xl font-semibold text-slate-50 mb-2">{project.title}</h3>
-                  <p className="text-xl font-extralight text-slate-200 mb-2">{project.des}</p> 
+                  <h3 className="text-xl font-semibold text-[#5588f7] mb-2">{project.title}</h3>
+                  <p className="text-xl font-extralight text-[#b0b0b0] mb-2">{project.des}</p> 
               </div>
             </div>
           </a>

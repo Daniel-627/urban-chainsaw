@@ -17,7 +17,7 @@ const socialMediaLinks = [
 
 const SocialLinks = () => {
   return (
-    <div className="grid grid-cols-4 gap-2 p-2 ">
+    <div className="flex flex-row space-x-2">
       {socialMediaLinks.map((social, index) => {
         const Icon = social.icon;
         return (
