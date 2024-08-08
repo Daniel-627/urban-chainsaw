@@ -3,7 +3,7 @@ import { projects } from '@/data';
 
 const Projects = () => {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 pb-3">
       {projects.map((project) => (
         <div
           key={project.id}

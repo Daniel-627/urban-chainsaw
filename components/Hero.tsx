@@ -24,8 +24,8 @@ const Hero = (props: Props) => {
         <p className='test-base font-light text-[#b0b0b0]'>a web designer and developer based in Kenya.<br/>I specialize in Ui/Ux Design, Responsive Web Design and Web Development.</p>
       </div>
       <div className='space-x-3'>
-        <button className='px-6 py-2 rounded-lg bg-[#303f9f] text-[#ffffff] '>Get In Touch</button>
-        <button className='border py-2 px-6 rounded-lg border-slate-400 hover:border-slate-50 text-slate-200'>My Resume</button>
+        <button className='px-6 py-2 rounded-lg bg-[#3a1ff3] text-[#ffffff] '>Get In Touch</button>
+        <button className='py-2 px-6 rounded-lg bg-[#252b41] text-[#b0b0b0]'>My Resume</button>
       </div>
     </div>
   )

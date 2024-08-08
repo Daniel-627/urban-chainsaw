@@ -10,7 +10,7 @@ const Header = (props: Props) => {
         <p className='font-extralight text-[#b0b0b0] text-xl'>Daniel627</p>
       </div>
       <div className='flex flex-row space-x-3'>
-        <AiOutlineX className='text-3xl text-[#b0b0b0] hover:text-[#ffffff]' />
+        <AiOutlineX className='text-3xl text-[#b0b0b0] hover:text-[#ffffff] bg-[252b41] border-[#fff]' />
         <AiFillLinkedin className='text-3xl text-[#b0b0b0] hover:text-[#ffffff]' />
         <AiOutlineMail className='text-3xl text-[#b0b0b0] hover:text-[#ffffff]' />
       </div>
