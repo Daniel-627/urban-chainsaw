@@ -19,12 +19,12 @@ const Hero = (props: Props) => {
         /> 
       </div>
       <div className='flex flex-col justify-items-center mx-56 text-center space-y-5 py-5'>
-        <p className='text-base font-extralight text-slate-400'>Hi, I'm Daniel Ochieng</p>
-        <h1 className='text-4xl font-semibold text-slate-200'>Building Bridges between Users and Technology through Design and Development.</h1>
-        <p className='test-base font-light text-slate-400'>a web designer and developer based in Kenya.<br/>I specialize in Ui/Ux Design, Responsive Web Design and Web Development.</p>
+        <p className='text-base font-extralight text-[#b0b0b0]'>Hi, I'm Daniel Ochieng</p>
+        <h1 className='text-4xl font-semibold text-[#ffffff]'>Building Bridges between Users and Technology through Design and Development.</h1>
+        <p className='test-base font-light text-[#b0b0b0]'>a web designer and developer based in Kenya.<br/>I specialize in Ui/Ux Design, Responsive Web Design and Web Development.</p>
       </div>
       <div className='space-x-3'>
-        <button className='px-6 py-2 rounded-lg bg-slate-300 hover:border hover:bg-slate-100 hover:text-slate-900 text-slate-900 hover:border-slate-50'>Get In Touch</button>
+        <button className='px-6 py-2 rounded-lg bg-[#303f9f] text-[#ffffff] '>Get In Touch</button>
         <button className='border py-2 px-6 rounded-lg border-slate-400 hover:border-slate-50 text-slate-200'>My Resume</button>
       </div>
     </div>
