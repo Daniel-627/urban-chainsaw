@@ -45,6 +45,15 @@ export const Animate = ({ children, width="fit-content"}: Props) => {
             animate={slideControls}
             transition={{ duration: 0.5, ease: "easeIn"}}
             className='absolute py-16 px-0 bg-[#3a1ff3] z-20'
+            style={{
+                position: 'absolute',
+                top: 4,
+                bottom: 4,
+                left: 0,
+                right: 0,
+                background: "#3a1ff3",
+                zIndex: 20,
+            }}
         />
     </div>
   );
