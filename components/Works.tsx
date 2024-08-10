@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div className="flex flex-col space-y-8 py-3">
       <div className='flex flex-col justify-center items-center'>
-        <h1 className='text-3xl text-[#ffffff]'>Selected Work</h1>
+        <h1 className='text-3xl text-[#ffffff] font-extralight'>Selected Work</h1>
         <p className='text-xs text-[#b0b0b0]'>This is what I'm capable of...</p>
       </div>
       {projects.map((project) => (

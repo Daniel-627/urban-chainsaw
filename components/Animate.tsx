@@ -6,8 +6,9 @@ import {motion, useInView, useAnimation} from 'framer-motion'
 
 interface Props {
     children: JSX.Element;
-    width: "fit-content" | "100%";
+    width?: "fit-content" | "100%";
 }
+
 
 export const Animate = ({ children, width="fit-content"}: Props) => {
     const ref = useRef(null);
@@ -24,7 +25,12 @@ export const Animate = ({ children, width="fit-content"}: Props) => {
     }, [isInView]);
 
   return (
-    <div ref={ref} className="relative hidden" style={{position: "relative", width, overflow:"hidden"}}>
+    <div ref={ref}
+    style={{
+        position: "relative",
+        width,
+        overflow:"hidden"}}
+    >
         <motion.div
             variants={{
                 hidden: {opacity: 0, y:75},
@@ -44,7 +50,6 @@ export const Animate = ({ children, width="fit-content"}: Props) => {
             initial="hidden"
             animate={slideControls}
             transition={{ duration: 0.5, ease: "easeIn"}}
-            className='absolute py-16 px-0 bg-[#3a1ff3] z-20'
             style={{
                 position: 'absolute',
                 top: 4,
