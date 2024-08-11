@@ -44,8 +44,8 @@ export const Animate = ({ children, width="fit-content"}: Props) => {
         </motion.div>
         <motion.div
             variants={{
-                hidden:{left:0},
-                visible: {left: "100%"},
+                hidden:{bottom:0},
+                visible: {bottom: "100%"},
             }}
             initial="hidden"
             animate={slideControls}
@@ -58,6 +58,7 @@ export const Animate = ({ children, width="fit-content"}: Props) => {
                 right: 0,
                 background: "#3a1ff3",
                 zIndex: 20,
+                borderRadius: 12,
             }}
         />
     </div>
