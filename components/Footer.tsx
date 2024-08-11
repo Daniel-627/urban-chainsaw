@@ -1,7 +1,7 @@
 import React from 'react'
 import SocialLinks from './subcomponents/SocialLinks'
 import { PiArrowCircleUpThin } from 'react-icons/pi'
-import { Animate2 } from './Animate2'
+import { Animate3 } from './Animate3'
 
 type Props = {}
 
@@ -20,9 +20,9 @@ const Footer = (props: Props) => {
           </div>
           <div className='flex flex-row justify-between'>
             <div className=''>
-              <Animate2>
+              <Animate3>
           <p className='text-lg text-[#b0b0b0] hover:text-slate-200'>ochiengdaniel627@gmail.com</p>
-        </Animate2>
+        </Animate3>
               
             </div>
             <div className=''>
@@ -31,9 +31,9 @@ const Footer = (props: Props) => {
           </div>
           <div className='flex justify-between'>
             <div>
-              <Animate2>
+              <Animate3>
           <p className='text-xs text-[#b0b0b0] font-thin'>Copyright@2024. All Rights Reserved</p>
-        </Animate2>
+        </Animate3>
               
             </div>
             <div className='md:hidden'>

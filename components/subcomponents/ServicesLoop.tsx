@@ -18,15 +18,15 @@ const ServicesLoop = (props: Props) => {
                 key={service.index}
                 className='flex flex-col space-y-3'
                 >
+                  <Animate2>
+                    <h1 className='text-5xl text-gray-600 font-semibold'>0{service.index}</h1>
+                  </Animate2>
+                  <Animate2>
+                    <h3 className='font-extralight text-[#5588f7] text-2xl'>{service.title}</h3>
+                  </Animate2>
                   <Animate>
-                  <h1 className='text-5xl text-gray-600 font-semibold'>0{service.index}</h1>
-                </Animate>
-                <Animate>
-                  <h3 className='font-extralight text-[#5588f7] text-2xl'>{service.title}</h3>
-                </Animate>
-                <Animate>
-                  <p className='font-thin text-base  text-[#b0b0b0]'>{service.details}</p>
-                </Animate>
+                    <p className='font-thin text-base  text-[#b0b0b0]'>{service.details}</p>
+                  </Animate>
                 </div>
             ))}
         </div>

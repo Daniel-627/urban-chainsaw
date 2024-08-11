@@ -10,7 +10,7 @@ interface Props {
 }
 
 
-export const Animate = ({ children, width="fit-content"}: Props) => {
+export const Animate3 = ({ children, width="fit-content"}: Props) => {
     const ref = useRef(null);
     const isInView = useInView(ref, {once: true});
 
