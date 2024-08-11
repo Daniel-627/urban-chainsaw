@@ -9,7 +9,6 @@ const Hero = (props: Props) => {
   return (
     <div className='flex flex-col justify-between items-center py-5'>
       <div >
-        <Animate>
           <Image
             src={img1}
             alt='My Photo'
@@ -18,8 +17,7 @@ const Hero = (props: Props) => {
             quality={100}
             placeholder='blur'
             className='rounded-3xl'
-          />
-        </Animate> 
+          /> 
       </div>
       <div className='flex flex-col justify-center items-center mx-56 text-center space-y-5 py-5'>
         <Animate>
