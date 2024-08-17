@@ -23,7 +23,7 @@ const Projects = () => {
             <div>
 
               <img src={project.img} alt={project.title} className="absolute inset-0 w-full h-full object-cover z-0" />
-              <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4 z-10">
+              <div className="absolute inset-0 bg-neutral-950/70 flex flex-col justify-end p-4 z-10">
                 <div className="flex flex-row space-x-2 mb-4">
                   {project.categories.map((category, index) => (
                     <Animate2>
