@@ -1,4 +1,7 @@
-import React from 'react'
+'use client'
+
+import React, {useEffect, useRef} from 'react';
+import {motion, useInView, useAnimation} from 'framer-motion'
 import { skills } from '@/data'
 
 interface Skill {
@@ -18,15 +21,44 @@ interface Skill {
 ]*/}
 
 const Skills = () => {
+  const ref = useRef(null);
+    const isInView = useInView(ref, {once: true});
+
+    const mainControls = useAnimation();
+
+    useEffect(() => {
+        if (isInView) {
+            mainControls.start("show");
+        }
+    }, [isInView]);
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4">
+    <motion.div
+    variants={{
+      hidden: {opacity : 0},
+      show: {
+        opacity:1,
+        transition: {
+          staggerChildren:0.25,
+        },
+      },
+    }}
+    initial="hidden"
+    animate={mainControls}
+    className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4"
+    >
       {skills.map(skill => (
-        <div key={skill.name} className="flex flex-col items-center">
+        <motion.div key={skill.name}
+        variants={{
+          hidden: {opacity: 0},
+          show: {opacity:1}
+        }}
+        className="flex flex-col items-center"
+        >
           <img src={skill.logo} alt={skill.name} className="w-16 h-16 object-contain" />
           {/*<p className="mt-2 text-center">{skill.name}</p>*/}
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   )
 }
 

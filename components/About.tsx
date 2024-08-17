@@ -1,6 +1,9 @@
+'use client'
+
 import React from 'react'
 import Clients from './subcomponents/Clients'
 import Skills from './subcomponents/Skills'
+import {motion, useInView, useAnimation} from 'framer-motion'
 import { Animate } from './Animate'
 import { Animate2 } from './Animate2'
 import { Animate1 } from './Animate1'
