@@ -27,6 +27,22 @@ import React from 'react';
                className="mx-4 h-16 w-auto"
              />
            ))}
+           {logos.map((logo, index) => (
+             <img
+               key={`duplicate-${index}`}
+               src={logo}
+               alt={`Company Logo ${index + 2} (duplicate)`}
+               className="mx-4 h-16 w-auto"
+             />
+           ))}
+           {logos.map((logo, index) => (
+             <img
+               key={`duplicate-${index}`}
+               src={logo}
+               alt={`Company Logo ${index + 3} (duplicate)`}
+               className="mx-4 h-16 w-auto"
+             />
+           ))}
          </div>
        </div>
      );

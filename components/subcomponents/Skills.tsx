@@ -32,33 +32,20 @@ const Skills = () => {
         }
     }, [isInView]);
   return (
-    <motion.div
-    variants={{
-      hidden: {opacity : 0},
-      show: {
-        opacity:1,
-        transition: {
-          staggerChildren:0.25,
-        },
-      },
-    }}
-    initial="hidden"
-    animate={mainControls}
+    <div
+    
     className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4"
     >
       {skills.map(skill => (
-        <motion.div key={skill.name}
-        variants={{
-          hidden: {opacity: 0},
-          show: {opacity:1}
-        }}
+        <div key={skill.name}
+        
         className="flex flex-col items-center"
         >
           <img src={skill.logo} alt={skill.name} className="w-16 h-16 object-contain" />
           {/*<p className="mt-2 text-center">{skill.name}</p>*/}
-        </motion.div>
+        </div>
       ))}
-    </motion.div>
+    </div>
   )
 }
 

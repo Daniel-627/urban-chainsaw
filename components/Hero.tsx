@@ -1,4 +1,7 @@
-import React from 'react'
+'use client'
+
+import React, {useEffect, useRef} from 'react';
+import {motion, useInView, useAnimation} from 'framer-motion'
 import Image from "next/image";
 import img1 from'@/public/img1.jpg'
 import { Animate } from './Animate';
@@ -8,7 +11,21 @@ type Props = {}
 const Hero = (props: Props) => {
   return (
     <div className='flex flex-col justify-between items-center py-5'>
-      <div >
+      <motion.div 
+      variants={{
+      hidden: {opacity : 0, y: -100},
+      show: {
+        opacity:1, y: 0
+      },
+    }}
+    initial="hidden"
+    animate="show"
+    transition={{
+      duration: 1,
+      ease: "easeOut",
+      delay: 0.2,
+    }}
+      >
           <Image
             src={img1}
             alt='My Photo'
@@ -18,7 +35,7 @@ const Hero = (props: Props) => {
             placeholder='blur'
             className='rounded-3xl'
           /> 
-      </div>
+      </motion.div>
       <div className='flex flex-col justify-center items-center mx-56 text-center space-y-5 py-5'>
         <Animate>
           <p className='flex text-center text-base font-extralight text-[#b0b0b0]'>Hi, I'm Daniel Ochieng</p>
