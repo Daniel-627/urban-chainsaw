@@ -1,52 +1,51 @@
 'use client'
 
-import React, {useEffect, useRef} from 'react';
-import {motion, useInView, useAnimation} from 'framer-motion'
-import { skills } from '@/data'
-
-interface Skill {
-  name: string
-  logo: string
-}
-
-{/*const skills: Skill[] = [
-  { name: 'React', logo: '/logos/react.png' },
-  { name: 'Next.js', logo: '/logos/nextjs.png' },
-  { name: 'TypeScript', logo: '/logos/typescript.png' },
-  { name: 'TailwindCSS', logo: '/logos/tailwindcss.png' },
-  { name: 'JavaScript', logo: '/logos/javascript.png' },
-  { name: 'Git', logo: '/logos/git.png' },
-  { name: 'HTML', logo: '/logos/html.png' },
-  { name: 'CSS', logo: '/logos/css.png' },
-]*/}
+import React, { useEffect, useRef } from 'react';
+import { motion, useInView, useAnimation } from 'framer-motion';
+import { skills } from '@/data';
 
 const Skills = () => {
   const ref = useRef(null);
-    const isInView = useInView(ref, {once: true});
+  const isInView = useInView(ref, { once: true });
+  const controls = useAnimation();
 
-    const mainControls = useAnimation();
+  useEffect(() => {
+    if (isInView) {
+      controls.start('visible');
+    }
+  }, [isInView, controls]);
 
-    useEffect(() => {
-        if (isInView) {
-            mainControls.start("show");
-        }
-    }, [isInView]);
   return (
     <div
-    
-    className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4"
+      ref={ref}
+      className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4"
     >
-      {skills.map(skill => (
-        <div key={skill.name}
-        
-        className="flex flex-col items-center"
+      {skills.map((skill, index) => (
+        <motion.div
+          key={skill.name}
+          className="flex flex-col items-center"
+          initial="hidden"
+          animate={controls}
+          variants={{
+            hidden: { opacity: 0, scale: 0.8, rotate: -15 },
+            visible: { opacity: 1, scale: 1, rotate: 0 }
+          }}
+          transition={{
+            duration: 0.5,
+            ease: 'easeOut',
+            delay: index * 0.1, // staggered delay for each skill
+            type: 'spring',
+            stiffness: 300
+          }}
+          whileHover={{ scale: 1.2, rotate: 15 }}
+          whileTap={{ scale: 0.9, rotate: -15 }}
         >
           <img src={skill.logo} alt={skill.name} className="w-16 h-16 object-contain" />
-          {/*<p className="mt-2 text-center">{skill.name}</p>*/}
-        </div>
+          {/* <p className="mt-2 text-center">{skill.name}</p> */}
+        </motion.div>
       ))}
     </div>
-  )
-}
+  );
+};
 
 export default Skills;
