@@ -5,6 +5,7 @@ import { motion, useInView, useAnimation } from 'framer-motion';
 import Image from "next/image";
 import img1 from '@/public/img1.jpg';
 import { Animate } from './Animate';
+import BackgroundAnimation from './BackgroundAnimation';
 
 interface Props {}
 
@@ -21,7 +22,9 @@ const Hero = (props: Props) => {
 
   return (
     <div className='flex flex-col justify-between items-center py-5' ref={ref}>
-      <motion.div 
+      <BackgroundAnimation />
+      <motion.div
+        className="relative z-10" 
         variants={{
           hidden: { opacity: 0, y: -100 },
           show: { opacity: 1, y: 0 },

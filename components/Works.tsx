@@ -8,7 +8,7 @@ import { Animate2 } from './Animate2';
 
 const Projects = () => {
   const projectVariants = {
-    hidden: { opacity: 0, scale: 0.95, y: 50 },
+    hidden: { opacity: 0, scale: 0.95, y: 30 },
     visible: {
       opacity: 1,
       scale: 1,

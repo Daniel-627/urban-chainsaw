@@ -33,7 +33,7 @@ const Skills = () => {
           transition={{
             duration: 0.5,
             ease: 'easeOut',
-            delay: index * 0.1, // staggered delay for each skill
+            delay: index * 0.3, // staggered delay for each skill
             type: 'spring',
             stiffness: 300
           }}
