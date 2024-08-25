@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { projects } from '@/data';
 import { Animate } from './Animate';
 import { Animate2 } from './Animate2';
+import Link from 'next/link'
 
 const Projects = () => {
   const projectVariants = {
@@ -41,7 +42,7 @@ const Projects = () => {
             viewport={{ once: true, amount: 0.5 }}
             variants={projectVariants}
           >
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <Link href={project.link} target="_blank" rel="noopener noreferrer">
               <div className="relative h-full w-full">
                 <img
                   src={project.img}
@@ -68,7 +69,7 @@ const Projects = () => {
                   </Animate2>
                 </div>
               </div>
-            </a>
+            </Link>
           </motion.div>
         ))}
       </div>
