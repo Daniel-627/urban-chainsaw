@@ -38,7 +38,7 @@ export const Animate = ({ children, width="fit-content"}: Props) => {
             }}
             initial="hidden"
             animate={mainControls}
-            transition={{duration: 0.5, delay: 0.3 }}
+            transition={{duration: 0.6, delay: 0.5 }}
         >
             {children}
         </motion.div>
@@ -49,7 +49,7 @@ export const Animate = ({ children, width="fit-content"}: Props) => {
             }}
             initial="hidden"
             animate={slideControls}
-            transition={{ duration: 0.5, ease: "easeIn"}}
+            transition={{ duration: 0.6, ease: "easeIn"}}
             style={{
                 position: 'absolute',
                 top: 4,

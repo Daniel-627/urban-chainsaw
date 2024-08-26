@@ -33,7 +33,7 @@ const Header = (props: Props) => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 }
           }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           whileHover={{ scale: 1.2, rotate: 15 }}
           whileTap={{ scale: 0.9, rotate: -15 }}
         >
@@ -47,7 +47,7 @@ const Header = (props: Props) => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 }
           }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
           whileHover={{ scale: 1.2, rotate: 15 }}
           whileTap={{ scale: 0.9, rotate: -15 }}
         >
@@ -61,7 +61,7 @@ const Header = (props: Props) => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 }
           }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
           whileHover={{ scale: 1.2, rotate: 15 }}
           whileTap={{ scale: 0.9, rotate: -15 }}
         >

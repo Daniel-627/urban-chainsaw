@@ -85,7 +85,7 @@ const Hero = (props: Props) => {
           transition={{
             duration: 0.8,
             ease: "easeOut",
-            delay: 0.6,
+            delay: 0.7,
           }}
         >
           Get In Touch
@@ -102,7 +102,7 @@ const Hero = (props: Props) => {
           transition={{
             duration: 0.8,
             ease: "easeOut",
-            delay: 0.7,
+            delay: 0.9,
           }}
         >
           My Resume
