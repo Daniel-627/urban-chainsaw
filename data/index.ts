@@ -74,9 +74,17 @@ export const process = [
 export const services = [
   {
     index: 1,
-    title: "Ux/Wireframing",
-    details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Quaerat aperiam nam cumque explicabo ipsum atque amet earum, provident veniam possimus nisi labore "
+    title: "Web Design",
+    details: "Create visually stunning and user-friendly websites that leave a lasting impression. From concept to design, I craft digital experiences that captivate your audience."
   },
-  {index: 2, title: "Web Design", details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Quaerat aperiam nam cumque explicabo ipsum atque amet earum, provident veniam possimus nisi labore "},
-  {index: 3, title: "Web Development", details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aperiam nam cumque explicabo ipsum atque amet earum, provident veniam possimus nisi labore "},
-]
+  {
+    index: 2,
+    title: "Web Development",
+    details: "Turn your design into a fully functional website. As an expert developer i'll bring your vision to life with clean, efficient code and optimized performance."
+  },
+  {
+    index: 3,
+    title: "UI/UX Design & Development",
+    details: "Experience the power of both design and development. I combine stunning visuals with intuitive user experiences to create websites that engage and convert."
+  },
+];
