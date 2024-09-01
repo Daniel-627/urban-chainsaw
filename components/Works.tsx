@@ -7,7 +7,6 @@ import Link from "next/link";
 import { ProjectsProps, Project } from '@/utils/Interface'; // Import the interfaces
 import { urlFor } from '@/sanity/lib/image'; // Import the urlFor function
 
-
 async function getProjects(): Promise<Project[]> {
   const query = 
   `
@@ -16,7 +15,10 @@ async function getProjects(): Promise<Project[]> {
       _id,
       description,
       slug,
-      mainImage
+      mainImage,
+      categories[]->{
+        title
+      }
     }
   `;
   const data = await client.fetch(query);
@@ -77,6 +79,15 @@ export default function Projects() {
                 <div className="absolute bottom-0 left-0 p-6 text-left z-10 bg-neutral-950/70 w-full">
                   <h3 className="text-xl font-semibold text-[#5588f7] mb-2">{project.title}</h3>
                   <p className="text-lg font-extralight text-[#b0b0b0] mb-2">{project.description}</p>
+                  {project.categories && (
+                    <div className="flex flex-wrap space-x-2 mt-2">
+                      {project.categories.map((category, index) => (
+                        <span key={index} className="text-xs font-light text-[#ffffff] bg-[#5588f7] px-2 py-1 rounded-md">
+                          {category.title}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </Link>
