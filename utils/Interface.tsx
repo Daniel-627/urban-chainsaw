@@ -5,7 +5,7 @@ export interface Project {
   slug: {current : string};
   mainImage: string;
   link: string;
-  categories?: string[]; // Added categories property
+  categories: { title: string }[]; // Added categories property
   body?: any[];
 }
 
