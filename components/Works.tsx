@@ -47,17 +47,17 @@ export default function Projects() {
   };
 
   return (
-    <div className="flex flex-col space-y-16 py-8">
+    <div className="flex flex-col space-y-16 py-8 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
       <div className="flex flex-col justify-center items-center mb-16">
-        <h1 className="text-3xl text-[#ffffff] font-extralight">Selected Work</h1>
-        <p className="text-xs text-[#b0b0b0]">This is what I'm capable of...</p>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#ffffff] font-extralight">Selected Work</h1>
+        <p className="text-xs sm:text-sm md:text-base text-[#b0b0b0] mt-2">This is what I'm capable of...</p>
       </div>
 
-      <div className="space-y-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         {projects.map((project) => (
           <motion.div
             key={project._id}
-            className="relative rounded-3xl overflow-hidden h-[550px]"
+            className="relative rounded-3xl overflow-hidden h-[350px] sm:h-[450px] md:h-[500px] lg:h-[550px]"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -76,9 +76,9 @@ export default function Projects() {
                     <span className="text-white">No Image Available</span>
                   </div>
                 )}
-                <div className="absolute bottom-0 left-0 p-6 text-left z-10 bg-neutral-950/70 w-full">
-                  <h3 className="text-xl font-semibold text-[#5588f7] mb-2">{project.title}</h3>
-                  <p className="text-lg font-extralight text-[#b0b0b0] mb-2">{project.description}</p>
+                <div className="absolute bottom-0 left-0 p-4 sm:p-6 text-left z-10 bg-neutral-950/70 w-full">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#5588f7] mb-1 sm:mb-2">{project.title}</h3>
+                  <p className="text-sm sm:text-lg font-extralight text-[#b0b0b0] mb-1 sm:mb-2">{project.description}</p>
                   {project.categories && (
                     <div className="flex flex-wrap space-x-2 mt-2">
                       {project.categories.map((category, index) => (
@@ -97,3 +97,4 @@ export default function Projects() {
     </div>
   );
 }
+

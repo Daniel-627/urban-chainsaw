@@ -20,17 +20,17 @@ const About = (props: Props) => {
             </Animate2>
             <Animate>
               <p className='text-[#b0b0b0] text-base font-thin'>
-                With a deep passion for web development and a keen eye for design, I have honed my skills in creating responsive, user-friendly websites. My journey began with learning the basics of HTML and CSS, and has since evolved into mastering frameworks like React and Next.js, as well as tools like TailwindCSS and Framer Motion.
+                Aluoch Daniel Ochieng is a skilled ICT specialist with a strong focus on web development and system administration. I have extensive experience in designing and managing websites, using technologies like JavaScript, ReactJS, and WordPress among others to create interactive and user-friendly web applications. In system administration, I excel in network management, server maintenance, and ensuring the security and optimal performance of IT infrastructure. My technical proficiency allows me to seamlessly integrate and maintain systems, ensuring efficient operations and a positive user experience.
               </p>
             </Animate>
             <Animate>
               <p className='text-[#b0b0b0] text-base font-thin'>
-                My approach to development is always user-centric, ensuring that the websites and applications I build are not only functional but also aesthetically pleasing. I believe that a well-designed user interface is key to delivering a great user experience, and I take pride in writing clean, efficient code that brings these designs to life.
+                My experience is centered around web design, development, and branding, where I create visually appealing and user-friendly websites that effectively communicate brand identity. My strong design sensibility and attention to detail ensure that every project reflects the brand's values and engages its target audience effectively.
               </p>
             </Animate>
             <Animate>
               <p className='text-[#b0b0b0] text-base font-thin'>
-                When I’m not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through content creation. My goal is to continuously improve and stay at the forefront of the ever-evolving web development landscape, while also helping others to learn and grow in this exciting field.
+                I holds a Diploma in Information Communication and Technology from The Kisumu National Polytechnic. I am committed to leveraging my technical expertise and problem-solving abilities to deliver innovative solutions, with a strong focus on collaboration and effective communication across teams.
               </p>
             </Animate>            
           </div>
