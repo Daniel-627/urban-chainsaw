@@ -7,10 +7,10 @@ type Props = {};
 
 const ServicesLoop = (props: Props) => {
   return (
-    <div className='flex flex-col py-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16'>
+    <div className='flex flex-col py-24 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 h-full'>
       <Animate2>
         <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-thin py-4'>
-          I can help you with......
+          What I Do.
         </h1>
       </Animate2>
 
@@ -21,7 +21,7 @@ const ServicesLoop = (props: Props) => {
             className='flex flex-col space-y-3 p-4 bg-neutral-900 rounded-xl shadow-md'
           >
             <Animate2>
-              <h1 className='text-3xl sm:text-4xl md:text-5xl text-gray-600 font-semibold'>
+              <h1 className='text-3xl sm:text-4xl md:text-6xl text-gray-600 font-semibold'>
                 0{service.index}
               </h1>
             </Animate2>
@@ -31,7 +31,7 @@ const ServicesLoop = (props: Props) => {
               </h3>
             </Animate2>
             <Animate>
-              <p className='text-sm sm:text-base md:text-lg text-[#b0b0b0] font-thin'>
+              <p className='text-sm sm:text-base md:text-base text-[#b0b0b0] font-thin'>
                 {service.details}
               </p>
             </Animate>

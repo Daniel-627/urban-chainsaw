@@ -61,7 +61,7 @@ const Hero = (props: Props) => {
       </div>
 
       <motion.div
-        className='flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3'
+        className='flex justify-center'
         variants={{
           hidden: { opacity: 0, y: 50 },
           show: { opacity: 1, y: 0 },
@@ -74,11 +74,12 @@ const Hero = (props: Props) => {
           delay: 0.5,
         }}
       >
-        <motion.button
+        <motion.a
+          href="mailto:ochiengdaniel627@gmail.com"
           className='px-6 py-2 rounded-lg bg-[#3a1ff3] text-[#ffffff] text-base sm:text-lg'
           variants={{
-            hidden: { opacity: 0, x: -50 },
-            show: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, y: 20 },
+            show: { opacity: 1, y: 0 },
           }}
           initial="hidden"
           animate={controls}
@@ -89,24 +90,7 @@ const Hero = (props: Props) => {
           }}
         >
           Get In Touch
-        </motion.button>
-
-        <motion.button
-          className='py-2 px-6 rounded-lg bg-[#121212] border border-[#b0b0b0] text-[#b0b0b0] text-base sm:text-lg'
-          variants={{
-            hidden: { opacity: 0, x: 50 },
-            show: { opacity: 1, x: 0 },
-          }}
-          initial="hidden"
-          animate={controls}
-          transition={{
-            duration: 0.8,
-            ease: "easeOut",
-            delay: 0.9,
-          }}
-        >
-          My Resume
-        </motion.button>
+        </motion.a>
       </motion.div>
     </div>
   )

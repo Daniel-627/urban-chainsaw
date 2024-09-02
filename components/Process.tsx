@@ -29,7 +29,7 @@ const Process = (props: Props) => {
           </p>
         </Animate>
       </div>
-      <div className='flex flex-1 flex-col pt-6 lg:pt-10'>
+      <div className='flex flex-1 flex-col pt-6 lg:pt-10 space-y-3'>
         {process.map((step, index) => (
           <div 
             key={step.index}

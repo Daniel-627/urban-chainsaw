@@ -28,7 +28,7 @@ const Header = (props: Props) => {
         <Animate>
           <Link href="/">
             <p className='font-extralight text-[#b0b0b0] text-lg md:text-xl hover:text-[#ffffff] cursor-pointer'>
-              Daniel627
+              Daniel Ochieng
             </p>
           </Link>
         </Animate>
@@ -60,20 +60,6 @@ const Header = (props: Props) => {
           whileTap={{ scale: 0.9, rotate: -15 }}
         >
           <AiFillLinkedin className='text-2xl md:text-3xl text-[#b0b0b0] hover:text-[#ffffff]' />
-        </motion.div>
-
-        <motion.div
-          initial="hidden"
-          animate={controls}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
-          whileHover={{ scale: 1.2, rotate: 15 }}
-          whileTap={{ scale: 0.9, rotate: -15 }}
-        >
-          <AiOutlineMail className='text-2xl md:text-3xl text-[#b0b0b0] hover:text-[#ffffff]' />
         </motion.div>
       </div>
     </div>
