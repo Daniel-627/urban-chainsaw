@@ -20,6 +20,10 @@ const Hero = (props: Props) => {
     }
   }, [isInView, controls]);
 
+  const handleButtonClick = () => {
+    window.location.href = 'mailto:ochiengdaniel627@gmail.com';
+  };
+
   return (
     <div
       className="flex flex-col justify-between items-center pt-28 md:pt-32 pb-5 px-4 sm:px-8 md:px-16 h-full"
@@ -81,23 +85,12 @@ const Hero = (props: Props) => {
           delay: 0.5,
         }}
       >
-        <motion.button
-          onClick={() => window.location.href = "mailto:ochiengdaniel627@gmail.com"}
+        <button
+          onClick={handleButtonClick}
           className="px-6 py-2 rounded-lg bg-[#3a1ff3] text-[#ffffff] text-base sm:text-lg cursor-pointer"
-          variants={{
-            hidden: { opacity: 0, y: 20 },
-            show: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate={controls}
-          transition={{
-            duration: 0.8,
-            ease: 'easeOut',
-            delay: 0.7,
-          }}
         >
           Get In Touch
-        </motion.button>
+        </button>
       </motion.div>
     </div>
   );
