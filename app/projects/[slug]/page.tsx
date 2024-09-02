@@ -38,7 +38,8 @@ const portableTextComponents: PortableTextComponents = {
 };
 
 async function getProject(slug: string) {
-  const query = `
+  const query = 
+  `
     *[_type == 'project' && slug.current == $slug][0] {
       title,
       description,
@@ -60,7 +61,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-4 text-white">{project.title}</h1>
+      <h1 className="text-4xl font-bold mb-4 text-gray-400 pt-9 md:pt-12">{project.title}</h1>
       {project.mainImage && (
         <img
           src={urlFor(project.mainImage).url()}
@@ -68,7 +69,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           className="w-full h-auto mb-4 rounded-lg shadow-lg"
         />
       )}
-      <div className="prose prose-lg text-gray-300 max-w-none">
+      <div className="prose prose-lg text-gray-500 max-w-none">
         {project.body ? (
           <PortableText value={project.body} components={portableTextComponents} />
         ) : (
