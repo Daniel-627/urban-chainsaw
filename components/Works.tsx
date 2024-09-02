@@ -48,7 +48,7 @@ export default function Projects() {
 
   return (
     <div className="flex flex-col space-y-16 py-8 px-2 sm:px-3 md:px-8 lg:px-12 xl:px-16">
-      <div className="flex flex-col justify-center items-center mb-16">
+      <div className="flex flex-col justify-center items-center md:mb-16">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#ffffff] font-extralight">Selected Work</h1>
         <p className="text-xs sm:text-sm md:text-base text-[#b0b0b0] mt-2 font-extralight">This is what I'm capable of...</p>
       </div>
@@ -57,7 +57,7 @@ export default function Projects() {
         {projects.map((project) => (
           <motion.div
             key={project._id}
-            className="relative rounded-3xl overflow-hidden h-[350px] sm:h-[450px] md:h-[500px] lg:h-[550px]"
+            className="relative rounded-xl overflow-hidden h-[350px] sm:h-[450px] md:h-[500px] lg:h-[550px]"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}

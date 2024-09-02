@@ -18,7 +18,7 @@ const Skills = () => {
   return (
     <div
       ref={ref}
-      className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4"
+      className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4"
     >
       {skills.map((skill, index) => (
         <motion.div

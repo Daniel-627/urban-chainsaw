@@ -21,7 +21,7 @@ const Hero = (props: Props) => {
   }, [isInView, controls]);
 
   return (
-    <div className='flex flex-col justify-between items-center pt-32 pb-5 px-4 sm:px-8 md:px-16 h-full' ref={ref}>
+    <div className='flex flex-col justify-between items-center pt-28 md:pt-32 pb-5 px-4 sm:px-8 md:px-16 h-full' ref={ref}>
       <BackgroundAnimation />
       <motion.div
         className="relative z-10"
