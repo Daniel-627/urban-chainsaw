@@ -4,6 +4,7 @@ const logos = [
   '/logos/company1.png',
   '/logos/company2.png',
   '/logos/company3.png',
+  '/logos/company4.png',
   // Add more logos as needed
 ];
 
