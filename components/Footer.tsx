@@ -1,6 +1,6 @@
 'use client'; // Ensure this is at the top of the file
 
-import React from 'react';
+import React, { useState } from 'react';
 import SocialLinks from './subcomponents/SocialLinks';
 import { PiArrowCircleUpThin } from 'react-icons/pi';
 import { Animate3 } from './Animate3';
@@ -8,11 +8,21 @@ import { Animate3 } from './Animate3';
 type Props = {};
 
 const Footer = (props: Props) => {
+  const [copied, setCopied] = useState(false);
+
   // Function to scroll to the top of the page
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth', // Smooth scroll
+    });
+  };
+
+  // Function to copy email to clipboard
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText('ochiengdaniel627@gmail.com').then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000); // Reset copied state after 2 seconds
     });
   };
 
@@ -29,8 +39,11 @@ const Footer = (props: Props) => {
         </div>
         <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start space-y-4 sm:space-y-0">
           <Animate3>
-            <p className="text-base sm:text-lg text-[#b0b0b0] hover:text-slate-200">
-              ochiengdaniel627@gmail.com
+            <p
+              className="text-base sm:text-lg text-[#b0b0b0] hover:text-slate-200 cursor-pointer"
+              onClick={copyToClipboard}
+            >
+              {copied ? 'Email Copied!' : 'ochiengdaniel627@gmail.com'}
             </p>
           </Animate3>
           <SocialLinks />
@@ -48,3 +61,4 @@ const Footer = (props: Props) => {
 };
 
 export default Footer;
+
