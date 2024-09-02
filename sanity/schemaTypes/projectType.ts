@@ -1,5 +1,5 @@
-import {DocumentTextIcon} from '@sanity/icons'
-import {defineArrayMember, defineField, defineType} from 'sanity'
+import { DocumentTextIcon } from '@sanity/icons';
+import { defineArrayMember, defineField, defineType } from 'sanity';
 
 export const projectType = defineType({
   name: 'project',
@@ -27,7 +27,7 @@ export const projectType = defineType({
     defineField({
       name: 'author',
       type: 'reference',
-      to: {type: 'author'},
+      to: { type: 'author' },
     }),
     defineField({
       name: 'mainImage',
@@ -40,13 +40,13 @@ export const projectType = defineType({
           name: 'alt',
           type: 'string',
           title: 'Alternative text',
-        }
-      ]
+        },
+      ],
     }),
     defineField({
       name: 'categories',
       type: 'array',
-      of: [defineArrayMember({type: 'reference', to: {type: 'category'}})],
+      of: [defineArrayMember({ type: 'reference', to: { type: 'category' } })],
     }),
     defineField({
       name: 'publishedAt',
@@ -56,6 +56,15 @@ export const projectType = defineType({
       name: 'body',
       type: 'blockContent',
     }),
+    // New URL field
+    defineField({
+      name: 'projectUrl',
+      title: 'Project URL',
+      type: 'url',
+      validation: Rule => Rule.uri({
+        scheme: ['http', 'https'],
+      }).error('Must be a valid URL'),
+    }),
   ],
   preview: {
     select: {
@@ -64,8 +73,8 @@ export const projectType = defineType({
       media: 'mainImage',
     },
     prepare(selection) {
-      const {author} = selection
-      return {...selection, subtitle: author && `by ${author}`}
+      const { author } = selection;
+      return { ...selection, subtitle: author && `by ${author}` };
     },
   },
-})
+});

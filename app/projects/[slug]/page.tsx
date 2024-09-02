@@ -44,7 +44,8 @@ async function getProject(slug: string) {
       title,
       description,
       mainImage,
-      body
+      body,
+      projectUrl
     }
   `;
   const project: Project | null = await client.fetch(query, { slug });
@@ -61,7 +62,19 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-4 text-gray-400 pt-9 md:pt-12">{project.title}</h1>
+      <div className="flex items-center justify-between mb-4">
+        <h1 className="text-4xl font-bold text-gray-400 pt-9 md:pt-12">{project.title}</h1>
+        {project.projectUrl && (
+          <a
+            href={project.projectUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 underline text-lg"
+          >
+            Visit Website
+          </a>
+        )}
+      </div>
       {project.mainImage && (
         <img
           src={urlFor(project.mainImage).url()}

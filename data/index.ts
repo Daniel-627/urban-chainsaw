@@ -84,7 +84,7 @@ export const services = [
   },
   {
     index: 3,
-    title: "UI/UX Design & Development",
+    title: "Design & Development + Branding",
     details: "Experience the power of both design and development. I combine stunning visuals with intuitive user experiences to create websites that engage and convert."
   },
 ];
