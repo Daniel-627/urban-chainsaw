@@ -4,14 +4,14 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 const BackgroundAnimation = () => {
-  const [circles, setCircles] = useState<Array<JSX.Element>>([]);
+  const [squares, setSquares] = useState<Array<JSX.Element>>([]);
 
   useEffect(() => {
-    // Generate circles with random properties
-    const newCircles = Array.from({ length: 10 }).map((_, index) => (
+    // Generate squares with random properties
+    const newSquares = Array.from({ length: 10 }).map((_, index) => (
       <motion.div
         key={index}
-        className="absolute rounded-full bg-blue-700 bg-opacity-40"
+        className="absolute bg-blue-700 bg-opacity-40"
         style={{
           width: `${Math.random() * 200 + 100}px`,
           height: `${Math.random() * 200 + 100}px`,
@@ -36,14 +36,15 @@ const BackgroundAnimation = () => {
       />
     ));
 
-    setCircles(newCircles);
+    setSquares(newSquares);
   }, []); // Empty dependency array ensures this runs only on client side
 
   return (
     <div className="absolute inset-0 overflow-hidden">
-      {circles}
+      {squares}
     </div>
   );
 };
 
 export default BackgroundAnimation;
+
