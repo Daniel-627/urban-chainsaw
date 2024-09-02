@@ -10,14 +10,14 @@ const logos = [
 
 const ClientsMarquee: React.FC = () => {
   return (
-    <div className="relative overflow-hidden whitespace-nowrap py-4">
+    <div className="relative overflow-hidden py-4">
       <div className="animate-marquee flex">
         {logos.map((logo, index) => (
           <img
             key={index}
             src={logo}
             alt={`Company Logo ${index + 1}`}
-            className="mx-4 h-16 w-auto"
+            className="mx-4 h-12 w-auto sm:h-16 md:h-20 lg:h-24 xl:h-28"
           />
         ))}
         {logos.map((logo, index) => (
@@ -25,7 +25,7 @@ const ClientsMarquee: React.FC = () => {
             key={`duplicate-${index}`}
             src={logo}
             alt={`Company Logo ${index + 1} (duplicate)`}
-            className="mx-4 h-16 w-auto"
+            className="mx-4 h-12 w-auto sm:h-16 md:h-20 lg:h-24 xl:h-28"
           />
         ))}
         {logos.map((logo, index) => (
@@ -33,7 +33,7 @@ const ClientsMarquee: React.FC = () => {
             key={`duplicate-${index}`}
             src={logo}
             alt={`Company Logo ${index + 2} (duplicate)`}
-            className="mx-4 h-16 w-auto"
+            className="mx-4 h-12 w-auto sm:h-16 md:h-20 lg:h-24 xl:h-28"
           />
         ))}
         {logos.map((logo, index) => (
@@ -41,7 +41,7 @@ const ClientsMarquee: React.FC = () => {
             key={`duplicate-${index}`}
             src={logo}
             alt={`Company Logo ${index + 3} (duplicate)`}
-            className="mx-4 h-16 w-auto"
+            className="mx-4 h-12 w-auto sm:h-16 md:h-20 lg:h-24 xl:h-28"
           />
         ))}
       </div>
