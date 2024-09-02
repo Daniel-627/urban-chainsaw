@@ -6,7 +6,7 @@ import Works from "@/components/Works";
 
 export default function Home() {
   return (
-    <main className="px-24 mx-auto ">
+    <main className="container mx-auto px-4">
       <Hero />
       <ServicesCarousel />
       <Works />
