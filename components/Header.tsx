@@ -45,7 +45,9 @@ const Header = (props: Props) => {
           whileHover={{ scale: 1.2, rotate: 15 }}
           whileTap={{ scale: 0.9, rotate: -15 }}
         >
-          <AiOutlineX className='text-2xl md:text-3xl text-[#b0b0b0] hover:text-[#ffffff]' />
+          <a href="http://" title='X' className='cursor-pointer'> 
+            <AiOutlineX className='text-2xl md:text-3xl text-[#b0b0b0] hover:text-[#ffffff]' />
+          </a>
         </motion.div>
 
         <motion.div
@@ -59,7 +61,9 @@ const Header = (props: Props) => {
           whileHover={{ scale: 1.2, rotate: 15 }}
           whileTap={{ scale: 0.9, rotate: -15 }}
         >
-          <AiFillLinkedin className='text-2xl md:text-3xl text-[#b0b0b0] hover:text-[#ffffff]' />
+          <a href="http://" title='LinkedIn' className='cursor-pointer'>
+            <AiFillLinkedin className='text-2xl md:text-3xl text-[#b0b0b0] hover:text-[#ffffff]' />
+          </a>
         </motion.div>
       </div>
     </div>

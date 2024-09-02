@@ -16,7 +16,7 @@ const Process = (props: Props) => {
     <div className='flex flex-col lg:flex-row p-6 sm:p-8 md:p-10'>
       <div className='flex flex-1 flex-col space-y-4 p-3'>
         <Animate2>
-          <h3 className='text-2xl sm:text-3xl md:text-4xl font-thin text-[#ffffff]'>
+          <h3 className='text-2xl sm:text-3xl md:text-4xl font-thin text-[#ffffff] pb-2'>
             This is how I get things done.....
           </h3>
         </Animate2>
@@ -50,7 +50,7 @@ const Process = (props: Props) => {
             </div>
             {/* Details box */}
             {hoveredIndex === index && (
-              <div className='absolute top-full left-0 mt-2 w-[250px] sm:w-[300px] p-3 sm:p-4 bg-neutral-900 text-[#b0b0b0] rounded-md shadow-lg z-20'>
+              <div className='absolute top-full right-0 mt-2 w-[250px] sm:w-[300px] p-3 sm:p-4 bg-neutral-900 text-[#b0b0b0] rounded-md shadow-lg z-20'>
                 <Animate>
                   <p className='text-xs sm:text-sm'>{step.details}</p>
                 </Animate>

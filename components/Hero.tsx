@@ -53,7 +53,7 @@ const Hero = (props: Props) => {
           <p className='text-base font-extralight text-[#b0b0b0]'>Hi, I'm Daniel Ochieng</p>
         </Animate>
         <Animate>
-          <h1 className='text-3xl sm:text-4xl font-semibold text-[#ffffff]'>Creating user-friendly technology through design and development</h1>
+          <h1 className='text-3xl sm:text-4xl font-semibold pb-2 text-[#ffffff] max-w-2xl sm:mx-8'>Creating user-friendly technology through design and development</h1>
         </Animate>
         <Animate>
           <p className='text-base font-extralight text-[#b0b0b0] max-w-xl mx-4 sm:mx-8'>UI/UX Designer & Web Developer based in Kenya. Specializing in responsive web design. Let's create something amazing together.</p>
@@ -61,7 +61,7 @@ const Hero = (props: Props) => {
       </div>
 
       <motion.div
-        className='flex justify-center'
+        className='flex justify-center cursor-pointer'
         variants={{
           hidden: { opacity: 0, y: 50 },
           show: { opacity: 1, y: 0 },

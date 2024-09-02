@@ -9,7 +9,7 @@ const SocialLinks = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div ref={ref} className="flex flex-row space-x-2">
+    <div ref={ref} className="flex flex-row space-x-2 md:space-x-4">
       {socialMediaLinks.map((social, index) => {
         const Icon = social.icon;
         return (
