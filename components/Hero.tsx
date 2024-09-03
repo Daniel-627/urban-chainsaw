@@ -21,7 +21,7 @@ const Hero = (props: Props) => {
   }, [isInView, controls]);
 
   const handleButtonClick = () => {
-    window.open('mailto:ochiengdaniel627@gmail.com', '_blank');
+    window.open('https://mailto:ochiengdaniel627@gmail.com', '_blank');
   };
 
   return (
@@ -55,7 +55,7 @@ const Hero = (props: Props) => {
         />
       </motion.div>
 
-      <div className="flex flex-col justify-center items-center text-center space-y-5 py-5">
+      <div className="flex flex-col justify-center items-center text-center space-y-5 py-5 z-10">
         <Animate>
           <p className="text-base font-extralight text-[#b0b0b0]">Hi, I'm Daniel Ochieng</p>
         </Animate>
@@ -72,7 +72,7 @@ const Hero = (props: Props) => {
       </div>
 
       <motion.div
-        className="flex justify-center"
+        className="flex justify-center z-10"
         variants={{
           hidden: { opacity: 0, y: 50 },
           show: { opacity: 1, y: 0 },
