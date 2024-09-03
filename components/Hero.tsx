@@ -21,7 +21,7 @@ const Hero = (props: Props) => {
   }, [isInView, controls]);
 
   const handleButtonClick = () => {
-    window.location.href = 'mailto:ochiengdaniel627@gmail.com';
+    window.open('mailto:ochiengdaniel627@gmail.com', '_blank');
   };
 
   return (
@@ -85,6 +85,7 @@ const Hero = (props: Props) => {
           delay: 0.5,
         }}
       >
+        {/* Ensure button onClick works independently of animations */}
         <button
           onClick={handleButtonClick}
           className="px-6 py-2 rounded-lg bg-[#3a1ff3] text-[#ffffff] text-base sm:text-lg cursor-pointer"
@@ -97,3 +98,4 @@ const Hero = (props: Props) => {
 };
 
 export default Hero;
+
