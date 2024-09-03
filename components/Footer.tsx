@@ -43,7 +43,7 @@ const Footer = (props: Props) => {
               className="text-base sm:text-lg text-[#b0b0b0] hover:text-slate-200 cursor-pointer"
               onClick={copyToClipboard}
             >
-              {copied ? 'Email Copied!' : 'ochiengdaniel627@gmail.com'}
+              Copy:{copied ? 'Email Copied!' : 'ochiengdaniel627@gmail.com'}
             </p>
           </Animate3>
           <SocialLinks />
