@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
-import { AiOutlineX, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
+import React, { useEffect, useRef, useState } from 'react';
+import { AiOutlineX, AiFillLinkedin } from 'react-icons/ai';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { Animate } from './Animate';
 import Link from 'next/link';
@@ -12,6 +12,10 @@ const Header = (props: Props) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const controls = useAnimation();
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isScrolling, setIsScrolling] = useState(false);
+  const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     if (isInView) {
@@ -19,9 +23,61 @@ const Header = (props: Props) => {
     }
   }, [isInView, controls]);
 
+  const handleScroll = () => {
+    setIsScrolling(true);
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      // Scrolling down
+      setIsVisible(false);
+    } else {
+      // Scrolling up
+      setIsVisible(true);
+    }
+
+    setLastScrollY(currentScrollY);
+
+    // Reset the inactivity timer
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
+
+    const id = setTimeout(() => {
+      setIsVisible(false);
+    }, 10000); // 10 seconds
+
+    setTimeoutId(id);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, [lastScrollY, timeoutId]);
+
+  useEffect(() => {
+    // Start a timer to hide the header after 10 seconds if no scrolling occurs
+    const id = setTimeout(() => {
+      setIsVisible(false);
+    }, 10000); // 10 seconds
+
+    setTimeoutId(id);
+
+    return () => {
+      clearTimeout(id);
+    };
+  }, []);
+
   return (
-    <div
-      className='fixed top-0 left-0 right-0 z-50 flex flex-row justify-between px-6 py-4 md:px-24 md:py-10 bg-transparent'
+    <motion.div
+      className={`fixed top-0 left-0 right-0 z-50 flex flex-row justify-between px-6 py-4 md:px-24 md:py-10 bg-transparent transition-transform duration-300 ${
+        isVisible ? 'translate-y-0' : '-translate-y-full'
+      }`}
       ref={ref}
     >
       <div>
@@ -66,7 +122,7 @@ const Header = (props: Props) => {
           </a>
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

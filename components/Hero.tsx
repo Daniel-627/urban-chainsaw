@@ -75,33 +75,36 @@ const Hero = (props: Props) => {
         </Animate>
       </div>
 
-      <motion.div
-        className="flex justify-center space-x-4 z-10"
-        variants={{
-          hidden: { opacity: 0, y: 50 },
-          show: { opacity: 1, y: 0 },
-        }}
-        initial="hidden"
-        animate={controls}
-        transition={{
-          duration: 1,
-          ease: 'easeOut',
-          delay: 0.5,
-        }}
-      >
-        <button
-          onClick={handleButtonClick}
-          className="px-6 py-2 rounded-lg bg-[#3a1ff3] text-[#ffffff] text-base sm:text-lg cursor-pointer"
+      <div className=''>
+        <motion.div
+          className="flex justify-center flex-col md:flex-row space-x-4 z-10"
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            show: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={controls}
+          transition={{
+            duration: 1,
+            ease: 'easeOut',
+            delay: 0.5,
+          }}
         >
-          Get In Touch
-        </button>
-        <button
-          onClick={handleResumeClick}
-          className="px-6 py-2 rounded-lg bg-transparent text-[#b0b0b0] text-base sm:text-lg cursor-pointer hover:text-[#ffffff] border-2 border-[#b0b0b0]"
-        >
-          My Resume
-        </button>
-      </motion.div>
+          <button
+            onClick={handleButtonClick}
+            className="px-6 py-1 rounded-lg bg-[#3a1ff3] text-[#ffffff] text-base sm:text-lg cursor-pointer"
+          >
+            Get In Touch
+          </button>
+          <button
+            onClick={handleResumeClick}
+            className="px-6 py-1 rounded-lg bg-transparent text-[#b0b0b0] text-base sm:text-lg cursor-pointer hover:text-[#ffffff] border-2 border-[#b0b0b0]"
+          >
+            My Resume
+          </button>
+        </motion.div>
+      </div>
+
     </div>
   );
 };
