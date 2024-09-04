@@ -30,7 +30,7 @@ const Hero = (props: Props) => {
 
   return (
     <div
-      className="flex flex-col justify-between items-center pt-28 md:pt-32 pb-5 px-4 sm:px-8 md:px-16 h-full"
+      className="flex flex-col justify-between items-center pt-28 md:pt-32 pb-5 px-4 sm:px-8 md:px-16 md:h-full"
       ref={ref}
     >
       <BackgroundAnimation />
