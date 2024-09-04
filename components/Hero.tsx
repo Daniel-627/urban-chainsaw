@@ -21,7 +21,7 @@ const Hero = (props: Props) => {
   }, [isInView, controls]);
 
   const handleButtonClick = () => {
-    window.open('https://mailto:ochiengdaniel627@gmail.com', '_blank');
+    window.open('https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsLQzJRmRGVlcjMWxSjxQVDKfwzRhVCcVctLPbstVRdPlLfFQdFslVqxxKlSRbGHcTWhXNTB', '_blank');
   };
 
   const handleResumeClick = () => {
