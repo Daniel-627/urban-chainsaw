@@ -21,7 +21,7 @@ const Hero = (props: Props) => {
   }, [isInView, controls]);
 
   const handleButtonClick = () => {
-    window.open('https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsLQzJRmRGVlcjMWxSjxQVDKfwzRhVCcVctLPbstVRdPlLfFQdFslVqxxKlSRbGHcTWhXNTB', '_blank');
+    window.open('mailto:ochiengdaniel627@gmail.com', '_blank');
   };
 
   const handleResumeClick = () => {
@@ -81,7 +81,7 @@ const Hero = (props: Props) => {
         >
           <motion.button
             onClick={handleButtonClick}
-            className="px-4 py-2 rounded-lg bg-[#3a1ff3] text-[#ffffff] text-base sm:text-lg cursor-pointer z-10"
+            className="px-4 py-1 rounded-lg bg-[#3a1ff3] text-[#ffffff] text-base cursor-pointer z-10"
             variants={{
               hidden: { opacity: 0, x: -100, y: 100 },
               show: { opacity: 1, x: 0, y: 0 },
@@ -98,7 +98,7 @@ const Hero = (props: Props) => {
           </motion.button>
           <motion.button
             onClick={handleResumeClick}
-            className="px-4 py-2 md:py-3 rounded-lg bg-transparent text-[#b0b0b0] text-base sm:text-lg cursor-pointer hover:text-[#ffffff] border-2 border-[#b0b0b0] z-10"
+            className="px-4 py-2 md:py-3 rounded-lg bg-transparent text-[#b0b0b0] text-base cursor-pointer hover:text-[#ffffff] border-2 border-[#b0b0b0] z-10"
             variants={{
               hidden: { opacity: 0, x: 100, y: 100 },
               show: { opacity: 1, x: 0, y: 0 },

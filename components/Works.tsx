@@ -49,7 +49,7 @@ export default function Projects() {
 
   return (
     <div className="flex flex-col space-y-8 py-8 px-2 sm:px-3 md:px-8 lg:px-12 xl:px-16">
-      <div className="flex flex-col justify-center items-center md:mb-16">
+      <div className="flex flex-col justify-center items-center md:mb-8">
         <Animate>
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#ffffff] font-extralight">Selected Work</h1>
         </Animate>

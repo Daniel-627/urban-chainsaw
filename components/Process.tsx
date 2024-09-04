@@ -22,10 +22,9 @@ const Process = (props: Props) => {
         </Animate2>
         <Animate>
           <p className='text-sm sm:text-base text-[#b0b0b0] font-thin'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Quaerat aperiam nam cumque explicabo ipsum atque amet earum, 
-            provident veniam possimus nisi labore expedita iste accusantium 
-            quibusdam, magni obcaecati facere culpa?
+            As a UI/UX designer and web developer, start by researching and defining the project, 
+            then create designs and build the site. Ensure functionality and optimize performance. 
+            Finally, set up analytics and provide ongoing support to ensure successful project completion.
           </p>
         </Animate>
       </div>
