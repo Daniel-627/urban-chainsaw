@@ -61,11 +61,11 @@ export const process = [
   {
     index: 1,
     title: "Ux/Wireframing",
-    details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Quaerat aperiam nam cumque explicabo ipsum atque amet earum, provident veniam possimus nisi labore "
+    details: "I conduct research, create user personas, and design wireframes to outline the user journey and structure of the site."
   },
-  {index: 2, title: "Web Design", details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Quaerat aperiam nam cumque explicabo ipsum atque amet earum, provident veniam possimus nisi labore "},
-  {index: 3, title: "Web Development", details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aperiam nam cumque explicabo ipsum atque amet earum, provident veniam possimus nisi labore "},
-  {index: 4, title: "Analytics Setup/Support", details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aperiam nam cumque explicabo ipsum atque amet earum, provident veniam possimus nisi labore "}
+  {index: 2, title: "I develop high-fidelity mockups and a style guide to define the visual aesthetics and responsive layouts of the website. "},
+  {index: 3, title: "Web Development", details: "I convert designs into functional code, integrate CMS, and ensure the site is secure, scalable, and optimized across devices."},
+  {index: 4, title: "Analytics Setup/Support", details: "I implement analytics tools, monitor key metrics, and provide ongoing updates, SEO, and support for continuous improvement."}
 ]
 
 export const services = [

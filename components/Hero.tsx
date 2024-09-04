@@ -75,13 +75,12 @@ const Hero = (props: Props) => {
         </Animate>
       </div>
 
-      <div>
         <div
           className="flex justify-center flex-col md:flex-row space-y-2 md:space-x-4 z-10"
         >
           <motion.button
             onClick={handleButtonClick}
-            className="px-4 py-1 rounded-lg bg-[#3a1ff3] text-[#ffffff] text-base cursor-pointer z-10"
+            className="px-4 py-2 rounded-lg bg-[#3a1ff3] text-[#ffffff] text-base cursor-pointer z-10"
             variants={{
               hidden: { opacity: 0, x: -100, y: 100 },
               show: { opacity: 1, x: 0, y: 0 },
@@ -98,7 +97,7 @@ const Hero = (props: Props) => {
           </motion.button>
           <motion.button
             onClick={handleResumeClick}
-            className="px-4 py-2 md:py-3 rounded-lg bg-transparent text-[#b0b0b0] text-base cursor-pointer hover:text-[#ffffff] border-2 border-[#b0b0b0] z-10"
+            className="px-4 py-2 rounded-lg bg-transparent text-[#b0b0b0] text-base cursor-pointer hover:text-[#ffffff] border-2 border-[#b0b0b0] z-10"
             variants={{
               hidden: { opacity: 0, x: 100, y: 100 },
               show: { opacity: 1, x: 0, y: 0 },
@@ -114,7 +113,6 @@ const Hero = (props: Props) => {
             My Resume
           </motion.button>
         </div>
-      </div>
     </div>
   );
 };
