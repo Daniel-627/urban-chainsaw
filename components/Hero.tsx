@@ -80,7 +80,7 @@ const Hero = (props: Props) => {
         >
           <motion.button
             onClick={handleButtonClick}
-            className="px-4 py-2 rounded-lg bg-[#3a1ff3] text-[#ffffff] text-base cursor-pointer z-10 border-2 border-[#3a1ff3]"
+            className="px-4 py-2 rounded-lg bg-[#3a1ff3] text-[#ffffff] text-base cursor-pointer z-10"
             variants={{
               hidden: { opacity: 0, x: -100, y: 100 },
               show: { opacity: 1, x: 0, y: 0 },
