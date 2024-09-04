@@ -76,7 +76,7 @@ const Hero = (props: Props) => {
       </div>
 
       <div>
-        <motion.div
+        <div
           className="flex justify-center flex-col md:flex-row space-y-2 md:space-x-4 z-10"
         >
           <motion.button
@@ -113,7 +113,7 @@ const Hero = (props: Props) => {
           >
             My Resume
           </motion.button>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
