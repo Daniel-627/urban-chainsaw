@@ -77,7 +77,7 @@ const Hero = (props: Props) => {
 
       <div className=''>
         <motion.div
-          className="flex justify-center flex-col md:flex-row space-x-4 z-10"
+          className="flex justify-center flex-col md:flex-row space-y-2 md:space-x-4 z-10"
           variants={{
             hidden: { opacity: 0, y: 50 },
             show: { opacity: 1, y: 0 },

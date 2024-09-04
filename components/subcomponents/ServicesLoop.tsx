@@ -18,7 +18,7 @@ const ServicesLoop = (props: Props) => {
         {services.map((service) => (
           <div
             key={service.index}
-            className='flex flex-col space-y-3 p-4 bg-neutral-900 rounded-xl shadow-md'
+            className='flex flex-col space-y-3 p-4 bg-neutral-900 rounded-lg shadow-md'
           >
             <Animate2>
               <h1 className='text-3xl sm:text-4xl md:text-6xl text-gray-600 font-semibold'>
