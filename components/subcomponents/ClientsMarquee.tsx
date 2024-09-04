@@ -17,7 +17,7 @@ const ClientsMarquee: React.FC = () => {
             key={index}
             src={logo}
             alt={`Company Logo ${index + 1}`}
-            className="h-12 w-auto sm:h-16 md:h-20 lg:h-24 xl:h-28"
+            className="h-12 w-auto sm:h-16"
           />
         ))}
         {logos.map((logo, index) => (
@@ -25,7 +25,7 @@ const ClientsMarquee: React.FC = () => {
             key={`duplicate-${index}`}
             src={logo}
             alt={`Company Logo ${index + 1} (duplicate)`}
-            className="h-12 w-auto sm:h-16 md:h-20"
+            className="h-12 w-auto sm:h-16"
           />
         ))}
         {logos.map((logo, index) => (
@@ -33,7 +33,7 @@ const ClientsMarquee: React.FC = () => {
             key={`duplicate-${index}`}
             src={logo}
             alt={`Company Logo ${index + 2} (duplicate)`}
-            className="h-12 w-auto sm:h-16 md:h-20"
+            className="h-12 w-auto sm:h-16"
           />
         ))}
         {logos.map((logo, index) => (
@@ -41,7 +41,7 @@ const ClientsMarquee: React.FC = () => {
             key={`duplicate-${index}`}
             src={logo}
             alt={`Company Logo ${index + 3} (duplicate)`}
-            className="h-12 w-auto sm:h-16 md:h-20"
+            className="h-12 w-auto sm:h-16"
           />
         ))}
         {logos.map((logo, index) => (
@@ -49,7 +49,7 @@ const ClientsMarquee: React.FC = () => {
             key={`duplicate-${index}`}
             src={logo}
             alt={`Company Logo ${index + 4} (duplicate)`}
-            className="h-12 w-auto sm:h-16 md:h-20"
+            className="h-12 w-auto sm:h-16"
           />
         ))}
       </div>
