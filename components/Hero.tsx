@@ -30,7 +30,7 @@ const Hero = (props: Props) => {
 
   return (
     <div
-      className="flex flex-col justify-between items-center pt-28 md:pt-32 pb-5 px-4 sm:px-8 md:px-16 md:h-full"
+      className="flex flex-col justify-between items-center pt-20 md:pt-32 pb-5 px-4 sm:px-8 md:px-16 md:h-full"
       ref={ref}
     >
       <BackgroundAnimation />
@@ -59,7 +59,7 @@ const Hero = (props: Props) => {
         />
       </motion.div>
 
-      <div className="flex flex-col justify-center items-center text-center space-y-5 py-5 z-10">
+      <div className="flex flex-col justify-center items-center text-center space-y-4 py-4 z-10">
         <Animate>
           <p className="text-base font-extralight text-[#b0b0b0]">Hi, I'm Daniel Ochieng</p>
         </Animate>
@@ -75,36 +75,46 @@ const Hero = (props: Props) => {
         </Animate>
       </div>
 
-      <div className=''>
+      <div>
         <motion.div
           className="flex justify-center flex-col md:flex-row space-y-2 md:space-x-4 z-10"
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            show: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate={controls}
-          transition={{
-            duration: 1,
-            ease: 'easeOut',
-            delay: 0.5,
-          }}
         >
-          <button
+          <motion.button
             onClick={handleButtonClick}
-            className="px-6 py-1 rounded-lg bg-[#3a1ff3] text-[#ffffff] text-base sm:text-lg cursor-pointer"
+            className="px-4 py-2 rounded-lg bg-[#3a1ff3] text-[#ffffff] text-base sm:text-lg cursor-pointer"
+            variants={{
+              hidden: { opacity: 0, x: -100, y: 100 },
+              show: { opacity: 1, x: 0, y: 0 },
+            }}
+            initial="hidden"
+            animate={controls}
+            transition={{
+              duration: 1,
+              ease: 'easeOut',
+              delay: 0.5,
+            }}
           >
             Get In Touch
-          </button>
-          <button
+          </motion.button>
+          <motion.button
             onClick={handleResumeClick}
-            className="px-6 py-1 rounded-lg bg-transparent text-[#b0b0b0] text-base sm:text-lg cursor-pointer hover:text-[#ffffff] border-2 border-[#b0b0b0]"
+            className="px-4 py-2 rounded-lg bg-transparent text-[#b0b0b0] text-base sm:text-lg cursor-pointer hover:text-[#ffffff] border-2 border-[#b0b0b0]"
+            variants={{
+              hidden: { opacity: 0, x: 100, y: 100 },
+              show: { opacity: 1, x: 0, y: 0 },
+            }}
+            initial="hidden"
+            animate={controls}
+            transition={{
+              duration: 1,
+              ease: 'easeOut',
+              delay: 0.7,
+            }}
           >
             My Resume
-          </button>
+          </motion.button>
         </motion.div>
       </div>
-
     </div>
   );
 };
