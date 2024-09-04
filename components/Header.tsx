@@ -101,7 +101,7 @@ const Header = (props: Props) => {
           whileHover={{ scale: 1.2, rotate: 15 }}
           whileTap={{ scale: 0.9, rotate: -15 }}
         >
-          <a href="http://" title='X' className='cursor-pointer'> 
+          <a href="https://x.com/Daniel__627" title='X' className='cursor-pointer'> 
             <AiOutlineX className='text-2xl md:text-3xl text-[#b0b0b0] hover:text-[#ffffff]' />
           </a>
         </motion.div>
@@ -117,7 +117,7 @@ const Header = (props: Props) => {
           whileHover={{ scale: 1.2, rotate: 15 }}
           whileTap={{ scale: 0.9, rotate: -15 }}
         >
-          <a href="http://" title='LinkedIn' className='cursor-pointer'>
+          <a href="https://www.linkedin.com/in/daniel-ochieng/" title='LinkedIn' className='cursor-pointer'>
             <AiFillLinkedin className='text-2xl md:text-3xl text-[#b0b0b0] hover:text-[#ffffff]' />
           </a>
         </motion.div>

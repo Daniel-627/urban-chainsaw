@@ -36,12 +36,12 @@ export const projects = [
 ];
 
 export const socialMediaLinks = [
-  { icon: FaTwitter, link: 'https://www.twitter.com' },
-  { icon: FaInstagram, link: 'https://www.instagram.com' },
-  { icon: FaLinkedin, link: 'https://www.linkedin.com' },
-  { icon: FaGithub, link: 'https://www.github.com' },
-  { icon: FaDribbble, link: 'https://www.github.com' },
-  { icon: FaBehance, link: 'https://www.github.com' },
+  { icon: FaTwitter, link: 'https://x.com/Daniel__627' },
+  { icon: FaLinkedin, link: 'https://www.linkedin.com/in/daniel-ochieng/' },
+  { icon: FaGithub, link: 'https://github.com/Daniel-627' },
+  { icon: FaInstagram, link: 'https://www.instagram.com/danielochieng627/' },
+  { icon: FaDribbble, link: 'https://dribbble.com/daniel627' },
+  { icon: FaBehance, link: 'https://www.behance.net/daniel627' },
 ];
 
 
