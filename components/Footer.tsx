@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import SocialLinks from './subcomponents/SocialLinks';
 import { PiArrowCircleUpThin } from 'react-icons/pi';
-import { Animate3 } from './Animate3';
+import { Animate3 } from './subcomponents/Animate3';
 
 type Props = {};
 

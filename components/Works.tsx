@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ProjectsProps, Project } from '@/utils/Interface'; // Import the interfaces
 import { urlFor } from '@/sanity/lib/image'; // Import the urlFor function
-import { Animate } from "./Animate";
+import { Animate } from "./subcomponents/Animate";
 
 async function getProjects(): Promise<Project[]> {
   const query = 

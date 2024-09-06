@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { AiOutlineX, AiFillLinkedin } from 'react-icons/ai';
 import { motion, useAnimation, useInView } from 'framer-motion';
-import { Animate } from './Animate';
+import { Animate } from './subcomponents/Animate';
 import Link from 'next/link';
 
 interface Props {}

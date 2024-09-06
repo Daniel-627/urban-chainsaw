@@ -4,8 +4,8 @@ import React, { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import img1 from '@/public/img1.jpg';
-import { Animate } from './Animate';
-import BackgroundAnimation from './BackgroundAnimation';
+import { Animate } from './subcomponents/Animate';
+import BackgroundAnimation from './subcomponents/BackgroundAnimation';
 
 interface Props {}
 

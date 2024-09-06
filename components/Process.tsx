@@ -3,9 +3,9 @@
 import React, { useState } from 'react';
 import { process } from '@/data';
 import { AiOutlinePlus } from 'react-icons/ai';
-import { Animate } from './Animate';
-import { Animate2 } from './Animate2';
-import { Animate1 } from './Animate1';
+import { Animate } from './subcomponents/Animate';
+import { Animate2 } from './subcomponents/Animate2';
+import { Animate1 } from './subcomponents/Animate1';
 
 type Props = {}
 

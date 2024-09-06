@@ -1,11 +1,11 @@
 'use client'
 
 import React from 'react'
-import Clients from './subcomponents/Clients'
 import Skills from './subcomponents/Skills'
-import { Animate } from './Animate'
-import { Animate2 } from './Animate2'
-import { Animate1 } from './Animate1'
+import { Animate } from './subcomponents/Animate'
+import { Animate2 } from './subcomponents/Animate2'
+import { Animate1 } from './subcomponents/Animate1'
+import ClientsMarquee from './subcomponents/ClientsMarquee'
 
 type Props = {}
 
@@ -45,7 +45,7 @@ const About = (props: Props) => {
           <Animate>
             <h1 className='flex text-center text-2xl text-[#b0b0b0] font-extralight'>Clients I've worked with...</h1>
           </Animate>
-          <Clients />
+          <ClientsMarquee />
         </div>
       </div>
     </>
