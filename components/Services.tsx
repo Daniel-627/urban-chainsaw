@@ -5,7 +5,7 @@ import { Animate2 } from '@/components/subcomponents/Animate2';
 
 type Props = {};
 
-const ServicesLoop = (props: Props) => {
+const Services = (props: Props) => {
   return (
     <div className='my-10'>
       <div className='flex flex-col py-24 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 h-full'>
@@ -44,4 +44,4 @@ const ServicesLoop = (props: Props) => {
   );
 };
 
-export default ServicesLoop;
+export default Services;

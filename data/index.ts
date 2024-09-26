@@ -72,17 +72,17 @@ export const process = [
 export const services = [
   {
     index: 1,
-    title: "Web Design",
+    title: "Ui/Ux Design",
     details: "Create visually stunning and user-friendly websites that leave a lasting impression. From concept to design, I craft digital experiences that captivate your audience."
   },
   {
     index: 2,
-    title: "Web Development",
+    title: "Web Design",
     details: "Turn your design into a fully functional website. As an expert developer i'll bring your vision to life with clean, efficient code and optimized performance."
   },
   {
     index: 3,
-    title: "Design + Development",
+    title: "Web Development",
     details: "Experience the power of both design and development. I combine stunning visuals with intuitive user experiences to create websites that engage and convert."
   },
 ];
