@@ -41,8 +41,6 @@ export const socialMediaLinks = [
   { icon: FaGithub, link: 'https://github.com/Daniel-627' },
   { icon: FaInstagram, link: 'https://www.instagram.com/danielochieng627/' },
   { icon: FaDribbble, link: 'https://dribbble.com/daniel627' },
-  { icon: FaBehance, link: 'https://www.behance.net/daniel627' },
-  { icon: FaPinterest, link: 'https://dk.pinterest.com/ochiengdaniel627' },
 ];
 
 
