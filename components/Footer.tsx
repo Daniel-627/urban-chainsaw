@@ -51,7 +51,7 @@ const Footer = (props: Props) => {
         <div className="flex justify-center sm:justify-between">
           <Animate3>
             <p className="text-xs text-[#b0b0b0] font-thin text-center sm:text-left">
-              Copyright @2024. All Rights Reserved
+              Copyright @2025. All Rights Reserved
             </p>
           </Animate3>
         </div>
