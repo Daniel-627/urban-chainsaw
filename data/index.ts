@@ -1,4 +1,4 @@
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaYoutube, FaPinterest, FaSnapchat, FaTiktok, FaDribbble, FaBehance } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaYoutube, FaPinterest, FaSnapchat, FaTiktok, FaDribbble, FaBehance, FaWhatsapp } from 'react-icons/fa';
 
 export const projects = [
   {
@@ -41,6 +41,7 @@ export const socialMediaLinks = [
   { icon: FaGithub, link: 'https://github.com/Daniel-627' },
   { icon: FaInstagram, link: 'https://www.instagram.com/danielochieng627/' },
   { icon: FaDribbble, link: 'https://dribbble.com/daniel627' },
+  { icon: FaWhatsapp, link: 'https://wa.me/254745253664' },
 ];
 
 
@@ -50,10 +51,8 @@ export const skills = [
   { name: 'TailwindCSS', logo: '/logos/tailwindcss.png' },
   { name: 'JavaScript', logo: '/logos/js.png' },
   { name: 'Framer', logo: '/logos/framer.png' },
-  { name: 'HTML', logo: '/logos/html.png' },
   { name: 'WebFlow', logo: '/logos/webflow.png' },
   { name: 'Wordpress', logo: '/logos/wordpress.png' },
-  { name: 'CSS', logo: '/logos/css.png' },
 ]
 
 export const process = [
