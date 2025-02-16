@@ -79,7 +79,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <img
           src={urlFor(project.mainImage).url()}
           alt={project.title}
-          className="w-full h-auto mb-4 rounded-lg shadow-lg"
+          className="object-cover w-full h-550 mb-4 rounded-lg shadow-lg"
         />
       )}
       <div className="prose prose-lg text-gray-500 max-w-none">
