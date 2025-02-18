@@ -69,7 +69,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             href={project.projectUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-400 underline text-lg"
+            className="text-blue-400 underline text-lg pt-9 md:pt-12"
           >
             Visit Website
           </a>
