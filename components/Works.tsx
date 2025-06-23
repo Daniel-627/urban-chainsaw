@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ProjectsProps, Project } from '@/utils/Interface';
 import { AnimatePresence } from "framer-motion";
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowUpRight } from "react-icons/fi";
 
 async function getProjects(): Promise<Project[]> {
   const query = `
@@ -35,44 +35,49 @@ export default function Projects() {
     fetchProjects();
   }, []);
 
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.15,
+      }
+    }
+  };
+
   const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: -40 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: 'easeOut' }
+      transition: { duration: 0.6, ease: 'easeOut' }
     }
   };
 
   return (
-    <div className="flex flex-col py-10 px-4 sm:px-6 md:px-10 lg:px-20">
-      <div className="text-left mb-10">
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl font-light text-white"
-        >
+    <motion.div
+      className="flex flex-col py-10 px-4 sm:px-6 md:px-10 lg:px-20"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={containerVariants}
+    >
+      <motion.div
+        variants={itemVariants}
+        className="text-left mb-10"
+      >
+        <h1 className="text-3xl sm:text-4xl font-light text-white">
           Selected Work
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          className="text-sm sm:text-base text-neutral-400 mt-2"
-        >
+        </h1>
+        <p className="text-sm sm:text-base text-neutral-400 mt-2">
           This is what I'm capable of...
-        </motion.p>
-      </div>
+        </p>
+      </motion.div>
 
       <div className="flex flex-col divide-y divide-neutral-700">
         <AnimatePresence>
           {projects.map((project) => (
             <motion.div
               key={project._id}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
               variants={itemVariants}
               className="flex items-center justify-between py-6 group"
             >
@@ -89,19 +94,21 @@ export default function Projects() {
                   </p>
                 </div>
               </Link>
+
               <motion.div
-                whileHover={{ x: 5 }}
+                initial={{ rotate: 45 }} // northeast ↗
+                whileHover={{ rotate: 0 }} // east →
                 transition={{ type: "spring", stiffness: 300 }}
                 className="ml-4 text-[#5588f7] text-2xl"
               >
                 <Link href={`/projects/${project.slug.current}`}>
-                  <FiArrowRight />
+                  <FiArrowUpRight />
                 </Link>
               </motion.div>
             </motion.div>
           ))}
         </AnimatePresence>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -45,7 +45,7 @@ const About = (props: Props) => {
           <Animate>
             <h1 className='flex text-center text-2xl text-[#b0b0b0] font-extralight'>Clients I've worked with...</h1>
           </Animate>
-          <ClientsMarquee />
+        
         </div>
       </div>
     </>
