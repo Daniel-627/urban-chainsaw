@@ -52,7 +52,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   if (!project) notFound();
 
   return (
-    <div className="w-full px-4 sm:px-6 py-10">
+    <div className="w-full px-4 sm:px-6 py-10 pt-20">
       <div className="max-w-3xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-6">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-200 mb-2 md:mb-0">{project.title}</h1>

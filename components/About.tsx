@@ -43,7 +43,7 @@ const About = (props: Props) => {
         </div>
         <div className='flex flex-col justify-center items-center'>
           <Animate>
-            <h1 className='flex text-center text-2xl text-[#b0b0b0] font-extralight'>Clients I've worked with...</h1>
+            <h1 className='flex text-center text-2xl text-[#b0b0b0] font-extralight'></h1>
           </Animate>
         
         </div>

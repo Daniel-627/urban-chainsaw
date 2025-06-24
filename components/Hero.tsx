@@ -76,7 +76,7 @@ const Hero = (props: Props) => {
       </div>
 
         <div
-          className="flex justify-center items-center flex-col md:flex-row space-y-2 md:space-x-2 z-10"
+          className="flex justify-center items-center flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 z-10"
         >
           <motion.button
             onClick={handleButtonClick}

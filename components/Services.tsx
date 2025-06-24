@@ -27,12 +27,12 @@ const Services = (props: Props) => {
                 </h1>
               </Animate2>
               <Animate2>
-                <h3 className='text-xl sm:text-2xl md:text-3xl text-[#5588f7] font-extralight'>
+                <h3 className='text-xl sm:text-2xl md:text-3xl font-extralight text-[#5588f7] '>
                   {service.title}
                 </h3>
               </Animate2>
               <Animate>
-                <p className='text-sm sm:text-base md:text-base text-[#b0b0b0] font-thin'>
+                <p className='text-sm sm:text-base md:text-base font-thin text-[#b0b0b0] '>
                   {service.details}
                 </p>
               </Animate>

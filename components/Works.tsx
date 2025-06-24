@@ -65,10 +65,10 @@ export default function Projects() {
         variants={itemVariants}
         className="text-left mb-10"
       >
-        <h1 className="text-3xl sm:text-4xl font-light text-white">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-thin text-white">
           Selected Work
         </h1>
-        <p className="text-sm sm:text-base text-neutral-400 mt-2">
+        <p className="text-sm sm:text-base md:text-base font-thin text-neutral-400 mt-2">
           This is what I'm capable of...
         </p>
       </motion.div>
@@ -86,18 +86,18 @@ export default function Projects() {
                 className="flex-1"
               >
                 <div className="text-left">
-                  <h2 className="text-xl sm:text-2xl font-medium text-white group-hover:text-[#5588f7] transition-colors">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-extralight text-white group-hover:text-[#5588f7] transition-colors">
                     {project.title}
                   </h2>
-                  <p className="text-sm sm:text-base text-neutral-400 mt-1 max-w-2xl line-clamp-2">
+                  <p className="text-sm sm:text-base md:text-base font-thin text-neutral-400 mt-1 max-w-2xl line-clamp-2">
                     {project.description}
                   </p>
                 </div>
               </Link>
 
               <motion.div
-                initial={{ rotate: 45 }} // northeast ↗
-                whileHover={{ rotate: 0 }} // east →
+                initial={{ rotate: 0 }} 
+                whileHover={{ rotate: -45 }} 
                 transition={{ type: "spring", stiffness: 300 }}
                 className="ml-4 text-[#5588f7] text-2xl"
               >
