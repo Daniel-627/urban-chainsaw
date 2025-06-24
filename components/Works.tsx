@@ -71,7 +71,7 @@ export default async function ProjectsPage() {
             </Link>
             <motion.div
               initial={{ rotate: 0 }}
-              whileHover={{ rotate: -45 }}
+              whileHover={{ rotate: 45 }}
               transition={{ type: "spring", stiffness: 300 }}
               className="ml-4 text-[#5588f7] text-2xl"
             >
