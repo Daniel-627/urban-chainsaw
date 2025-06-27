@@ -5,8 +5,8 @@ import { Project } from "@/utils/Interface";
 import { FiArrowUpRight } from "react-icons/fi";
 
 async function getProjects(): Promise<Project[]> {
-  const query = `
-    *[_type == 'project'] {
+  const query =`
+  *[_type == 'project'] {
       title,
       _id,
       description,
