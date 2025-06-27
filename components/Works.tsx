@@ -3,7 +3,6 @@ import { client } from "@/sanity/lib/client";
 import Link from "next/link";
 import { Project } from "@/utils/Interface";
 import { FiArrowUpRight } from "react-icons/fi";
-import { motion } from "framer-motion";
 
 async function getProjects(): Promise<Project[]> {
   const query = `
@@ -24,39 +23,17 @@ async function getProjects(): Promise<Project[]> {
 export default async function ProjectsPage() {
   const projects = await getProjects();
 
-  const containerVariants = {
-    hidden: {},
-    visible: {
-      transition: { staggerChildren: 0.15 }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: -40 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
-    }
-  };
-
   return (
-    <motion.div
-      className="flex flex-col py-10 px-4 sm:px-6 md:px-10 lg:px-20"
-      initial="hidden"
-      animate="visible"
-      variants={containerVariants}
-    >
-      <motion.div variants={itemVariants} className="text-left mb-10">
+    <div className="flex flex-col py-10 px-4 sm:px-6 md:px-10 lg:px-20">
+      <div className="text-left mb-10">
         <h1 className="text-3xl md:text-5xl font-thin text-white">Selected Work</h1>
         <p className="text-base text-neutral-400 mt-2">This is what I'm capable of...</p>
-      </motion.div>
+      </div>
 
       <div className="flex flex-col divide-y divide-neutral-700">
         {projects.map((project) => (
-          <motion.div
+          <div
             key={project._id}
-            variants={itemVariants}
             className="flex items-center justify-between py-6 group"
           >
             <Link href={`/projects/${project.slug.current}`} className="flex-1">
@@ -69,19 +46,14 @@ export default async function ProjectsPage() {
                 </p>
               </div>
             </Link>
-            <motion.div
-              initial={{ rotate: 0 }}
-              whileHover={{ rotate: 45 }}
-              transition={{ type: "spring", stiffness: 300 }}
-              className="ml-4 text-[#5588f7] text-2xl"
-            >
+            <div className="ml-4 text-[#5588f7] text-2xl group-hover:rotate-12 transition-transform duration-200">
               <Link href={`/projects/${project.slug.current}`}>
                 <FiArrowUpRight />
               </Link>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 }
